@@ -10,7 +10,7 @@ NodeJS built-in Modules:
     dgram - Provides implementation of UDP datagram sockets
     dns - To do DNS lookups and name resolution functions
     events - To handle events
-    fs - To handle the file system
+    fs - To handle the file system (CRUD and rename)
     http - To make Node.js act as an HTTP server
     https - To make Node.js act as an HTTPS server.
     net - To create servers and clients
