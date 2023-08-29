@@ -6,3 +6,5 @@ http.createServer(function (req, res) {
     res.write(req.url);
     res.end();
 }).listen(8080);
+
+// running the address 'http://localhost:8080/summer' will return '/summer'

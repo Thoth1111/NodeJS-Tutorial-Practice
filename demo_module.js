@@ -6,3 +6,5 @@ http.createServer( function(req, res) {
     res.write("The date and time are currently: " + dt.myDateTime());
     res.end();
 }).listen(8080);
+
+//running the address 'http://localhost:8080/' will return 'The date and time are currently: ~current date and time~'
