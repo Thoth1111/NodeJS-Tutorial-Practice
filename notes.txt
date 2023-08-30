@@ -28,5 +28,7 @@ NodeJS built-in Modules:
     v8 - To access information about V8 (the JavaScript engine)
     vm - To compile JavaScript code in a virtual machine
     zlib - To compress or decompress files
-
+Other modules:
+    Formidable - For working with file uploads(https://www.w3schools.com/nodejs/nodejs_uploadfiles.asp)
+    
 3. Use `exports` keyword to make properties and methods available outside a module. See myfirstmodule.js
