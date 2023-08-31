@@ -9,15 +9,14 @@ const con = new Pool({
     database: "postgres"
 });
 
-con.connect(function (err, client, done) {
+con.connect(function (err) {
     if (err) throw err;
     console.log("Connected!");
     //create a database using the client object
-    client.query("CREATE DATABASE nodejs_tutes", function (err, result) {
+    con.query("CREATE DATABASE nodejs_tutes", function (err, result) {
         //call the done() method to release the client back to the pool
-        done();
         if (err) throw err;
-        console.log("Database created!");
+        console.log("Database created");
         //end the connection
         con.end();
     });
