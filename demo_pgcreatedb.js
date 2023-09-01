@@ -26,7 +26,7 @@ pool.connect(function (err, client, done) {
             console.error("Error creating database: " + err);
             return;
         }
-        console.log("Database created: " + result);
+        console.log("Database created successfully");
     });
 });
 

@@ -3,7 +3,9 @@ const mysql = require('mysql');
 const con =  mysql.createConnection({
     host: "localhost",
     user: "username",
-    password: "password"
+    password: "password",
+    //use the actual database name for queries on a database that already exists
+    database: "mydb"
 });
 
 con.connect(function (err) {
