@@ -14,14 +14,14 @@ pool.connect(function (err, client, done) {
     }
     console.log("Connected to database!");
 
-    const insertUser = "INSERT INTO users (name, email, age) VALUES ('John Doe', 'johnndoe@example.com', 25)";
+    const selectUser = "SELECT * FROM users WHERE name = 'John Doe'";
 
-    client.query(insertUser, function (err, result) {
+    client.query(selectUser, function (err, result) {
         done();
         if (err) {
-            console.error("Error inserting user: " + err);
+            console.error("Error selecting user: " + err);
             return;
         }
-        console.log("User added successfully");
+        console.log(result.rows);
     });
 });
