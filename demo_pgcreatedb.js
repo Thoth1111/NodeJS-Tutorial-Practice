@@ -6,7 +6,7 @@ const pool = new Pool({
     user: "postgres",
     port: 5432,
     password: "password",
-    database: "postgres"
+    database: "nodejs_tutes"
 });
 //connect to the pool
 pool.connect(function (err, client, done) {
